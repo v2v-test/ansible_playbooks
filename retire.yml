@@ -1,0 +1,8 @@
+---
+- name: Retirement playbook
+  hosts: all
+  tasks: 
+    - name: Remove the file on given host
+      file:
+        path: ~/ansible-touched-file
+        state: absent

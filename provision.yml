@@ -1,0 +1,8 @@
+---
+- name: Provisioning playbook
+  hosts: all
+  tasks: 
+    - name: Touch a new file on given host
+      file:
+        path: ~/ansible-touched-file
+        state: touch
