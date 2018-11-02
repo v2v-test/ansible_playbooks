@@ -4,5 +4,5 @@
   tasks: 
     - name: Touch a new file on given host
       file:
-        path: ~/ansible-touched-file
+        path: /tmp/ansible-touched-file
         state: touch

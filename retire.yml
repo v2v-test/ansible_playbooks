@@ -4,5 +4,5 @@
   tasks: 
     - name: Remove the file on given host
       file:
-        path: ~/ansible-touched-file
+        path: /tmp/ansible-touched-file
         state: absent
