@@ -1,0 +1,8 @@
+---
+- name: Provisioning playbook
+  hosts: all
+  tasks: 
+    - name: Touch new second post file on guest vm
+      file:
+        path: /tmp/ansible-post-playbook
+        state: touch
